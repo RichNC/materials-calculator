@@ -1,0 +1,42 @@
+body {
+  background-color: Gainsboro;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  width: 450px;
+  margin:  30px auto;
+  box-shadow: -1px 3px 18px 0px rgba(128,128,128,1);
+  font-family: Optima;
+  line-height: 125%;
+}
+
+input, select {
+  height: 30px;
+}
+
+button {
+  background-color: #303030;
+  color: white;
+  height: 35px;
+  width: 100%;
+  font-size: 18px;
+  font-family: Optima;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#resultSentence {
+  margin: 25px;
+  font-size: 18px;
+  line-height: 135%;
+}

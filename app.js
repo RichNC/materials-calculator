@@ -20,6 +20,7 @@ const casesNeeded = () => {
   // const formatNumber = (num) => {
   //   num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
   // }
-  document.getElementById('resultSentence').innerText=`The area of your space is ${area} feet. You will need ${cases} cases.`
+  console.log(cases.length);
+  document.getElementById('resultSentence').innerHTML=`The area of your space is <strong>${area.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</strong> feet.<br>You will need <strong>${cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</strong> cases.`
 }
 
