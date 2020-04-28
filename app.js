@@ -4,8 +4,6 @@ const unitText = () => {
   document.getElementById('inUnit2').innerText=`(in ${unitOfMeasurement})`
 }
 
-
-
 const casesNeeded = () => {
   const length = document.getElementById('length').value;
   const height = document.getElementById('height').value;
@@ -17,10 +15,11 @@ const casesNeeded = () => {
     area = Math.round((length/12 * height/12)*100)/100;
   };
   const cases = Math.ceil(area / 24);
-  // const formatNumber = (num) => {
-  //   num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
-  // }
-  console.log(cases.length);
-  document.getElementById('resultSentence').innerHTML=`The area of your space is <strong>${area.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</strong> feet.<br>You will need <strong>${cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')}</strong> cases.`
+  const formatNumber = (num) => num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+  const addPluralS = () => cases > 1 ? 's' : '';
+  const addPluralFeet = () => area > 1 ? 'feet' : 'foot';
+
+  document.getElementById('resultSentence').innerHTML=`The area of your space is <strong>${formatNumber(area)}</strong> ${addPluralFeet()}.<br>You will need <strong>${formatNumber(cases)}</strong> case${addPluralS()}.`
 }
+
 
