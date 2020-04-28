@@ -7,8 +7,15 @@
 </head>
 <body>
   <h1>Material Calculator</h1>
-  <p>To determine the number of cases needed for your project, simply enter the length and width of the space in feet.</p>
+  <p>To determine the number of cases needed for your project, simply choose a unit of measurement and enter the length and height of your space.</p>
   <form>
+    <div>
+      <label>Unit of Measurement</label>
+      <select id="unitOfMeasurement">
+        <option value="feet">Feet</option>
+        <option value="inches">Inches</option>
+      </select>
+    </div>
     <div>
       <label for="length">Length (in feet)</label>
       <input type="number" id="length">
