@@ -47,3 +47,54 @@ button {
   font-size: 18px;
   line-height: 135%;
 }
+=======
+body {
+  background-color: Gainsboro;
+}
+
+section {
+  background-color: white;
+  padding: 20px;
+  width: 450px;
+  margin:  30px auto;
+  box-shadow: -1px 3px 18px 0px rgba(128,128,128,1);
+  font-family: Optima;
+  line-height: 135%;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+}
+
+input, select {
+  height: 30px;
+  font-size: 16px;
+  padding: 5px 10px;
+}
+
+button {
+  background-color: #303030;
+  color: white;
+  height: 40px;
+  width: 100%;
+  font-size: 18px;
+  font-family: Optima;
+  box-shadow: 0px 3px 10px -2px rgba(99,99,99,1);
+  border: none;
+
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#resultSentence {
+  margin: 25px;
+  font-size: 18px;
+  line-height: 135%;
+}
+
