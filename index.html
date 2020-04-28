@@ -11,17 +11,17 @@
   <form>
     <div>
       <label>Unit of Measurement</label>
-      <select id="unitOfMeasurement">
+      <select id="unitOfMeasurement" onchange="unitText()">
         <option value="feet">Feet</option>
         <option value="inches">Inches</option>
       </select>
     </div>
     <div>
-      <label for="length">Length (in #)</label>
+      <label for="length">Length <span id="inUnit">(in feet)</span></label>
       <input type="number" id="length">
     </div>
     <div>
-      <label for="height">Height (in #)</label>
+      <label for="height">Height <span id="inUnit2">(in feet)</span></label>
       <input type="number" id="height">
     </div>
     <button type="button" id="btn" onclick="casesNeeded()">Submit</button>
