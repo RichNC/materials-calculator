@@ -2,6 +2,9 @@ const unitText = () => {
   const unitOfMeasurement = document.getElementById('unitOfMeasurement').value;
   document.getElementById('inUnit').innerText=`(in ${unitOfMeasurement})`
   document.getElementById('inUnit2').innerText=`(in ${unitOfMeasurement})`
+  document.querySelector('#length').value='';
+  document.querySelector('#height').value='';
+
 }
 
 const casesNeeded = () => {
